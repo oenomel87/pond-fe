@@ -1,0 +1,33 @@
+.modal {
+  justify-content: center;
+  align-items: center;
+}
+
+.modal section {
+  padding: 0.3rem 0;
+}
+
+.modal .box {
+  background: #fff;
+  word-break: keep-all;
+}
+
+.modal .modal-content {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.modal .button-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal .button-section button {
+  background: white;
+  border-color: transparent;
+  color: #2196F3;
+}
+
+.modal .button-section button:hover {
+  background: #E3F2FD;
+}

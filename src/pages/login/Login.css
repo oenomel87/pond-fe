@@ -1,0 +1,23 @@
+#Login .login-form {
+  max-width: 300px;
+}
+
+#Login .label {
+  color: #2196F3;
+}
+
+.hero .title {
+  font-size: 3rem;
+  text-align: center;
+  color: #2196F3;
+}
+
+.login-btn-wrapper {
+  padding-top: 1rem;
+}
+
+#login-btn {
+  background: #2196F3;
+  border-color: #2196F3;
+  color: #ffffff;
+}
