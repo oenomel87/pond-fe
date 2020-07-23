@@ -5,7 +5,7 @@ import Cookies from 'js-cookie';
 import { API_ENDPOINT, TOKEN_NAME } from '../../env';
 import './Login.css';
 
-import Modal from '../../components/Modal';
+import Modal from '../../components/modal/Modal';
 
 export default class Login extends React.Component {
   
@@ -80,6 +80,12 @@ export default class Login extends React.Component {
     this.setState(state => (userData));
   }
 
+  handleEnterKey(evt) {
+    if(evt.key === 'Enter') {
+      this.login();
+    }
+  }
+
   render() {
     const usernameValid = this.state.usernameMessage.length === 0;
     const passwordValid = this.state.passwordMessage.length === 0;
@@ -107,7 +113,7 @@ export default class Login extends React.Component {
           <div className="field">
             <label className="label">비밀번호</label>
             <div className="control">
-              <input type="password" name="password" className={passwordField} onChange={evt => this.handleChange(evt)} value={this.state.passowrd} />
+              <input type="password" name="password" className={passwordField} onKeyUp={evt => this.handleEnterKey(evt)} onChange={evt => this.handleChange(evt)} value={this.state.passowrd} />
             </div>
             {passwordHelp}
           </div>

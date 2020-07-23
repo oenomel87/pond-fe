@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 
 import Login from './pages/login/Login';
 import Main from './pages/main/Main';
+import EventForm from './pages/form/EventFrom';
 
 import { API_ENDPOINT, TOKEN_NAME } from './env';
 
@@ -58,7 +59,10 @@ export default class App extends React.Component {
 
     switch(this.state.view) {
       case 'Main':
-        page = <Main />
+        page = <Main changeView={view => this.changeView(view)} />
+        break;
+      case 'EventForm':
+        page = <EventForm />
         break;
       case 'Login':
       default:

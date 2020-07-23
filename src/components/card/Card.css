@@ -1,0 +1,46 @@
+.main-card {
+  margin: 1rem 0;
+}
+
+.category-card {
+  position: relative;
+  width: 100%;
+}
+
+.category-card .box {
+  padding-top: 58%;
+}
+
+.category-card .media-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 1.3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-card .amount-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.category-card .currency {
+  padding-left: .3rem;
+}
+
+.category-card .card-name {
+  font-size: .8rem;
+  color: #636363;
+}
+
+.category-card .add-button .button {
+  background: #2196F3;
+  border-color: #2196F3;
+  color: #ffffff;
+}
